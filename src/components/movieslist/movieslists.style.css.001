@@ -1,0 +1,38 @@
+.movies-main-container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.tag-menu {
+    display: flex;
+    width: 960px;
+    margin-top: 20px;
+}
+
+.status-tag-menu, .categories-tag-menu {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    width: 550px;
+}
+
+.status-tag-menu a {
+    text-decoration: none;
+}
+
+.status-tag-menu a:hover {
+    text-decoration: underline;
+}
+
+.categories-tag-menu {
+    justify-content: right;
+}
+
+.movies-container {
+    display: grid;
+    width: 550px;
+    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 3;
+    justify-items: left;
+}

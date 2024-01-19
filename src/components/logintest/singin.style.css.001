@@ -1,0 +1,48 @@
+.profile {
+    position: relative;
+    width: 100px;
+    height: fit-content;
+    background-color: brown;
+    cursor: pointer;
+}
+
+.hero-link {
+    height: 50px;
+    width: inherit;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+
+.dropdown {
+    display: none;
+    background-color: rgb(109, 30, 30);
+    position: absolute;
+    top: 50px;
+    width: inherit;
+    height: fit-content;
+    z-index: 2;
+    text-align: center;
+}
+
+.dropdown-link {
+    display: block;
+    all:unset;
+    height: 50px;
+    margin: 0;
+    width: 100%;
+    color: white;
+}
+
+.dropdown-link:hover {
+    background-color: white;
+    color: black;
+}
+
+.profile:hover .dropdown {
+    display: block;
+}
+
+.username-label {
+    color: silver;
+}

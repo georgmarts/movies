@@ -1,0 +1,25 @@
+.footer-container {
+    width: 100%;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: silver;
+    background: rgb(35, 35, 35);
+}
+
+.footer-container a:hover {
+    color: white;
+    border-radius: 0.1px;
+    outline: 1px white solid;
+    outline-offset: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .footer-container {
+        font-size: 12px;
+    }
+}

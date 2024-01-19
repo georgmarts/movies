@@ -1,0 +1,36 @@
+.dark-mode-btn {
+    position: relative;
+    display: grid;
+    align-items: center;
+    background-color: #5d5c5c;;
+    margin-left: 100px;
+    height: 40px;
+    width: 70px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.sun-symbol, .moon-symbol {
+    font-size: 25px;
+    color: yellow;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.sun-symbol {
+    left: 7.5px;
+}
+
+.moon-symbol {
+    right: 7.5px;
+}
+
+.dark-mode-btn-circle {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 100px;
+    transition: all 0.5s;
+}

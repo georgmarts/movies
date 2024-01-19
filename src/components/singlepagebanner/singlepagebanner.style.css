@@ -1,0 +1,87 @@
+.single-page-banner-container {
+    position: relative;
+    /* width: clamp(300px, 90vw, 900px); */
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: black;
+    margin-inline: auto;
+    z-index: 0;
+}
+
+.dark-filter {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.689), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));;
+}
+
+.single-page-banner-info-container {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: fit-content;
+    top: 25%;
+    left: 5%;
+    transition: opacity 0.5s;
+    color: white;
+    line-height: clamp(15px, 4.5vw, 35px);
+    font-size: clamp(10px, 3vw, 20px);
+}
+
+.single-page-banner-info-container h1 {
+    margin: 0;
+    font-size: clamp(16px, 4vw, 30px);
+}
+
+
+.single-page-banner-btn-container {
+    display: flex;
+    gap: 5px;
+}
+
+.single-page-banner-btn-container button {
+    width: 100px;
+    aspect-ratio: 16 / 6;
+    border-radius: 3px;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.single-page-banner-btn-container button a{
+    all: unset;
+}
+
+
+.single-page-banner-btn-container button:hover {
+    background-color: red;
+    color: white;
+    transition: all 0.5s;
+}
+
+@media only screen and (max-width: 700px) {
+    .single-page-banner-container {
+        position: relative;
+        margin-top: 87px;
+    }
+    
+    .single-page-banner-info-container h1 {
+        margin-bottom: 20px;
+    }
+
+    .single-page-banner-info-container p {
+        display: none;
+    }
+
+    .single-page-banner-btn-container {
+        flex-direction: column;
+    }
+    
+    .single-page-banner-btn-container button {
+        width: 200px;
+        height: 30px;
+    }
+}

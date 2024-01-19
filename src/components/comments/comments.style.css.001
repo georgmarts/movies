@@ -1,0 +1,102 @@
+.add-comment-container {
+    display: grid;
+    margin: 20px auto;
+    width: clamp(200px, 80%, 700px);
+    height: auto;
+}
+
+.comment-input {
+    min-height: 50px;
+}
+
+.comments {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: rgb(222, 222, 222);
+    margin-top: 10px;
+    height: auto;
+    background-color: rgb(45, 45, 45);
+}
+
+.comment {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(65, 64, 64);
+    border-radius: 10px;
+    color: rgb(222, 222, 222);
+    padding-right: 30px;
+}
+
+.comment-col-2 {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reply-to {
+    font-size: 16px;
+    color: grey;
+}
+
+.reply {
+    margin-left: 30px;
+}
+
+
+.comment-avatar {
+    margin: 20px;
+    background-color: black;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+}
+
+.comment-username {
+    font-size: 18px;
+}
+
+.comment-itself {
+    margin: 10px 0;
+    line-break: anywhere;
+}
+
+.comment-btn-card {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.likes-count {
+    font-size: 14px;
+}
+
+.icon {
+    width: 16px;
+    aspect-ratio: 1 / 1;
+    fill: grey;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.icon:hover {
+    fill: white;
+    transition: all 0.3s;
+}
+
+.comment-error {
+    font-size: 14px;
+    color: red
+}
+
+.mg-t-5 {
+    margin-top: 5px;
+}

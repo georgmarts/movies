@@ -1,0 +1,74 @@
+.rating-hero-container {
+  position: relative;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.rating-container {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    outline: 10px solid white;
+    overflow: clip;
+    touch-action: none;
+    z-index: 4;
+    border-radius: 0.5px;
+    cursor: pointer;
+  }
+  
+  .empty {
+    position: absolute;
+    transform: translateX(0);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 234, 234, 0);
+    z-index: 0;
+  }
+  
+  .rating {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e7a201;
+    z-index: 1;
+  }
+  
+  .scroll {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f7ae00;
+    z-index: 2;
+  }
+  
+  .star-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    fill: white;
+  }
+
+  .average-rating-value {
+    position: absolute;
+    left: 330px;
+    color: white;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    background-color: rgb(205, 7, 7);
+  }
+
+  @media only screen and (max-width: 800px) {
+    .rating-hero-container {
+      display: none;
+    }
+  }
+  

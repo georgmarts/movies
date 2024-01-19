@@ -1,0 +1,55 @@
+"use client";
+
+import MainBanner from "@/components/mainbanner/mainbanner";
+import MoreInfo from "@/components/moreinfo/moreinfo";
+import MovieSlider from "@/components/movieslider/movieslider";
+import { useState } from "react";
+
+export default function Home() {
+  const [isMoreInfo, setIsMoreInfo] = useState(false);
+  const [movie, setMovie] = useState({
+    id: 12345678,
+    title: "JOKER",
+    description:
+      "Joker is a 2019 American psychological thriller film directed by Todd Phillips, who also co-wrote the screenplay with Scott Silver.",
+    imgLandscape: "/joker-16-9.jpg",
+    imgPortrait: "/joker-9-16.webp",
+  });
+
+  return (
+    <>
+      <MainBanner movie={movie} setIsMoreInfo={setIsMoreInfo}></MainBanner>
+      {isMoreInfo && <MoreInfo setIsClosed={setIsMoreInfo} movie={movie} />}
+      <div className="all-movies-sliders">
+        <MovieSlider
+          category="movie"
+          genre="undefined"
+          country="undefined"
+          year="undefined"
+          label="Movies"
+        />
+        <MovieSlider
+          category="tvshow"
+          genre="undefined"
+          country="undefined"
+          year="undefined"
+          label="TV Shows"
+        />
+        <MovieSlider
+          category="cartoon"
+          genre="undefined"
+          country="undefined"
+          year="undefined"
+          label="Cartoon"
+        />
+        <MovieSlider
+          category="anime"
+          genre="undefined"
+          country="undefined"
+          year="undefined"
+          label="Anime"
+        />
+      </div>
+    </>
+  );
+}

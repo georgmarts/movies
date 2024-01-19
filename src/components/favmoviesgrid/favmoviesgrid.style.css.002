@@ -1,0 +1,84 @@
+:root {
+    --triangle-width: 30px;
+}
+
+.fav-btn-container {
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.fav-label {
+    color: white;
+    margin-left: 30px;
+}
+
+.edit-delete-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 15px;
+}
+
+.fav-edit-btn {
+    all: unset;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 20px;
+    background-color: #E50914;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.5s;
+    flex-shrink: 0;
+}
+
+.fav-edit-btn:hover {
+    background-color: white;
+    color: #E50914;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.fav-movies-grid {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.fav-movie-container {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    transition: transform 0.5s, filter 0.5s;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    outline: 1px black solid;
+    box-shadow: 0 0 10px -7px silver;
+    transition: all ease-in-out 0.5s;
+}
+
+.fav-movie-container:hover {
+    /* transform: scale(1.01); */
+    outline: 1px white solid;
+    transition: all ease-in-out 0.5s;
+}
+
+.fav-checkbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: var(--triangle-width);
+    height: var(--triangle-width);
+    accent-color: #E50914;
+    border-radius: 5px;
+    transition: opacity 0.5s;
+    z-index: 1;
+    cursor: pointer;
+}

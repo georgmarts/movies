@@ -1,0 +1,10 @@
+.favorites-hero-container {
+    margin-inline: auto;
+    margin-top: 50px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.favorites-movie-title {
+    color: white;
+}

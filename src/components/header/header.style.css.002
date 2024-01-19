@@ -1,0 +1,67 @@
+.header-container {
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    height: 50px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.158);
+    width: 100%;
+}
+
+.main-menu-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 40px;
+  }
+
+.fav-and-login-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: right;
+    margin-right: 40px;
+}
+  
+  .logo {
+    background-image: url('/netflix-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .main-menu-link, .fav-link {
+    all: unset;
+    cursor: pointer;
+    color: silver
+  }
+  
+  .main-menu-link:hover, .fav-link:hover {
+    color: white
+  }
+
+  .search-link {
+    border: 1px white solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 16px;
+    transition: all ease-in-out 100ms;
+  }
+
+  .search-link:hover {
+    background-color: white;
+    color: #E50914;
+    transition: all ease-in-out 100ms;
+  }
+  
+
+@media only screen and (max-width: 700px) {
+  .header-container {
+    display: none;
+  }
+}

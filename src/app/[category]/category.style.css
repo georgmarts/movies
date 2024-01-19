@@ -1,0 +1,15 @@
+.category-page-container {
+    color: white;
+}
+
+.category-label {
+    font-size: 25px;
+    margin: 50px 0 50px 40px;
+    color: white;
+}
+
+@media only screen and (max-width: 700px) {
+    .category-label {
+        margin: 100px 0 25px 25px;
+    }
+}
