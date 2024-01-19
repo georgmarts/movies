@@ -122,7 +122,7 @@ export default function SingleMoviePage({ params }) {
     setCommentIsLoading(true);
     e.preventDefault();
     try {
-      const res = await fetch(`api/addcomment/${movieId}`, {
+      const res = await fetch(`/api/addcomment/${movieId}`, {
         method: "POST",
         body: JSON.stringify({
           id: Date.now(),
